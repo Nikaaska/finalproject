@@ -1,0 +1,59 @@
+div.header {
+    
+
+
+    max-width: 1170px;
+    
+    
+    margin: 0 auto;  
+    
+
+    nav {
+
+        
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+}
+        
+        img.geolab {
+            
+            width: 150px;
+            height: 150px;
+     }
+    }
+    
+
+    ul{
+      
+        display: flex;
+        font-size: 25px;
+
+        a {
+            color: #c75252;
+        }
+      
+        
+       
+
+        li{
+            margin-right: 20px;
+            color: #c75252;
+            :hover{
+                color: green;
+            }
+            
+            
+     
+          
+           
+            }
+           
+           
+            
+        }
+    
+
+    
+
