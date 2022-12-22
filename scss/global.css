@@ -60,14 +60,31 @@ a {
   box-sizing: border-box;
 }
 
-body {
-  height: 5000px;
+body html {
+  scroll-behavior: smooth;
 }
-body div.header nav {
+body div.header {
+  width: 100%;
+  position: relative;
+}
+body div.text {
+  height: 100px;
+  width: 400px;
+  position: absolute;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-align: center;
+}
+body div.nav {
   width: 100%;
   height: 125px;
   background-color: #81d29f;
   position: fixed;
+  z-index: 5;
   top: 0;
   right: 0;
   left: 0;
@@ -76,46 +93,41 @@ body div.header nav {
   flex-direction: row;
   justify-content: space-between;
 }
-body div.header img.logo {
+body img.logo {
   width: 100px;
   height: 120px;
 }
-body ul.first {
+
+ul.first {
   margin-left: 20px;
 }
-body ul {
+
+ul {
   display: flex;
   font-size: 25px;
   font-weight: 600;
   width: 300px;
 }
-body ul a {
+ul a {
   color: #c75252;
 }
-body ul li {
+ul li {
   margin-right: 15px;
   color: #c75252;
 }
-body ul li :hover {
+ul li :hover {
   color: green;
   font-size: 25px;
 }
-body h1 {
-  margin-top: 200px;
+
+div.button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 50px;
 }
-body h2 {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 60px;
-}
-body div.button {
-  margin-top: 50px;
-  text-align: center;
-  outline: none;
-}
-body div.button button {
+div.button button {
   border: none;
   outline: none;
   height: 100px;
