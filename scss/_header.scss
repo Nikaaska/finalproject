@@ -7,7 +7,7 @@ div.header {
 
 
     width: 100%;
-    position: relative;
+    position: sticky;
     
 }
  
@@ -17,11 +17,11 @@ div.header {
     position: absolute;
     color: white;
     position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
     
     
 }
@@ -102,13 +102,12 @@ ul.first{
             height: 100px;
             width: 300px;
             font-size: 30px;
-            background-color: #c75252;
+            background-color:rgb(61, 142, 212);
             cursor: pointer;
             
         }
         }
-
-        
+   
 
         
 

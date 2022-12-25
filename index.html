@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <title>NikaAsatiani</title>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+
+            $(window).on("scroll", function() {
+                console.log($(this).scrollTop())
+                
+                // aq vcert zomas sqrolma rodis shecvalos, 10-is magivrad shegidzlia 20 an rac gacyobs chacero
+                    if($(this).scrollTop() >= 10){
+                // aq raze shecvalos
+                        $(".logo").attr("src","images/resto.png");
+                    }
+                    else {
+                //aq mititebul zomas tu acda isev igive daabrunos rac tavidan iyo
+                        $(".logo").attr("src","images/LOGO.png");
+                    }
+            })
+        })
+
+    </script>
 </head>
 <body>
    
@@ -46,8 +68,29 @@
 
     <div class="button">
 
-        <button>View Our Gallery</button>
+        <button onclick="window.location.href='https://w3docs.com';">
+            View Our Gallery
+          </button>
     </div>
+</div>
+
+
+<div class="about">
+    <div>
+    <img src="/images/about.jpg" alt="croisantwithmilk">
+    </div>
+    <div class="txtabout">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem, maiores doloremque quo perferendis, ut obcaecati harum,
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum necessitatibus iste, nulla recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum?
+            Nobis, saepe sapiente omnis qui eligendi pariatur. quis voluptas. Assumenda facere adipisci quaerat. Illum doloremque quae omnis vitae.
+            
+            Lonsectetur adipisicing elit. Blanditiis aspernatur, ratione dolore vero asperiores explicabo.
+            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ab itaque modi, reprehenderit fugit soluta, molestias optio repellat incidunt iure sed deserunt nemo magnam rem explicabo vitae. Cum, nostrum, quidem.</p>
+    </div>
+
 </div>
 
       
